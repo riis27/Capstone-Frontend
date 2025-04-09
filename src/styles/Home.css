@@ -1,0 +1,331 @@
+/* Home.css */
+
+
+main {
+    padding: 10px;
+    flex: 1;
+    display: grid;
+    grid-gap: 10px;
+    text-align: center;
+}
+
+main h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 3rem;
+}
+
+main h2 {
+    font-size: 1.7em;
+    font-family: "Castoro Titling", serif;
+}
+
+main p {
+    padding: 10px;
+}
+
+.details p span {
+    font-weight: bold;
+}
+
+/* Header Image  */
+.featured-pet {
+    grid-column: 1 / -1;
+    position: relative;
+    overflow: hidden;
+    filter: brightness(110%) sepia(35%);
+    opacity: .9;
+}
+
+.featured-pet .image-block img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 1.9s ease;
+    margin-bottom: 20px;
+    height: 400px;
+}
+
+.featured-pet .details {
+    position: absolute;
+    top: 60%;
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    width: 80%; /* Adjust width for better responsiveness */
+    color: white;
+    font-family: "Dancing Script", cursive;
+    box-sizing: border-box; /* Use border-box for width/padding */
+    text-align: center; /* Center text */
+    border: none;
+    font-size: 2.2rem;
+    margin-top: 0;
+}
+
+
+.featured-pet:hover .image-block img {
+    transform: scale(1.5);
+}
+
+.highlights,
+.adoption,
+.stories,
+.store-details,
+.team,
+.thanks,
+.faqs,
+.services,
+.contacts,
+.Letter,
+.pet-box {
+    border: 1px solid #a09595;
+    padding: 20px; /* Adjust padding for better responsiveness */
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(134, 125, 125, 0.3);
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 10px; /* Add some margin between sections */
+}
+
+.image-block {
+    text-align: center;
+    overflow: hidden;
+}
+
+.image-block img,
+.adoption img,
+.services img,
+.story img,
+.team .member img,
+.thanks img {
+    max-width: 100%;
+    min-width: 200px; /* Adjust min-width for smaller screens */
+    min-height: 200px; /* Adjust min-height for smaller screens */
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    object-fit: cover;
+    filter: grayscale(.3);
+    margin: 0 auto 10px; /* Add margin below images */
+}
+
+
+/* Highlights */
+.note {
+    font-style: italic;
+    font-family: "Dancing Script", cursive;
+    font-size: 1.2rem; /* Adjust font size for responsiveness */
+    font-weight: lighter;
+}
+
+
+/* Store Hours */
+.store-details p {
+    font-size: 1rem; /* Adjust font size for responsiveness */
+}
+
+
+/* Member & Customer Styles */
+.stories p {
+    padding-left: 0; /* Remove left padding for better stacking on small screens */
+    text-align: center; /* Center text on small screens */
+}
+
+.member p {
+    padding-right: 0; /* Remove right padding */
+    text-align: center; /* Center text */
+}
+
+.stories .story,
+.team .member {
+    display: flex;
+    flex-direction: column; /* Stack items on small screens */
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.stories .story img,
+.team .member img {
+    width: 100px; /* Adjust image size */
+    height: 100px;
+    border-radius: 50%; /* Make them circular */
+    margin-bottom: 10px; /* Add margin below images */
+}
+
+.thanks img {
+    filter: grayscale(.6);
+    max-width: 70%; /* Make image responsive */
+    height: auto;
+    margin: 0 auto 15px;
+}
+
+.thanks p {
+    font-family: "Dancing Script", cursive;
+    font-weight: lighter;
+    font-size: 1.3rem; /* Adjust font size */
+}
+
+/* Button Style */
+main .button {
+    align-self: center;
+    font-family: "Castoro Titling", serif;
+    padding: 0.5rem 2rem; /* Adjust padding */
+    border: 1px solid #f7f4f4;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+    margin: 10px auto; /* Add vertical margin */
+    text-decoration: none;
+    display: inline-block; /* Prevent full width on small screens */
+}
+
+main .button:hover {
+    background-color: #bbaeae;
+    color: #fff;
+}
+
+/* About Page style */
+.Letter {
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto;
+    text-align: center;
+}
+
+.Letter h2 {
+    padding-top: 20px; /* Adjust padding */
+}
+
+.Letter img {
+    border-radius: 20px !important; /* Adjust border-radius */
+    margin: 10px auto; /* Center horizontally */
+    max-width: 80%; /* Make image responsive */
+    height: auto;
+    display: block;
+}
+
+/* Adoption Page Style */
+.pet-box {
+    place-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px; /* Adjust padding */
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.pet-box:hover {
+    transform: scale(1.05);
+}
+
+.pet-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.pet-box h3 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem; /* Adjust font size */
+    font-weight: bold;
+    align-items: center;
+}
+
+.pet-box h3 span.age {
+    font-size: 0.7em;
+    font-weight: normal;
+    color: #777;
+    margin-left: 5px;
+}
+
+.pet-info {
+    display: none;
+    margin-top: 10px;
+    font-size: 0.9rem; /* Adjust font size */
+    text-align: left;
+}
+
+.pet-info p {
+    margin-bottom: 5px;
+}
+
+.pet-info strong {
+    font-weight: bold;
+}
+
+.pet-container {
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px; /* Add padding to the container */
+}
+
+/* Responsive columns */
+/* Small Screens (Phones - up to ~600px width) */
+@media (max-width: 600px) {
+    main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .featured-pet .details {
+        font-size: 1.8rem;
+        top: 50%;
+        width: 90%;
+    }
+
+    .pet-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .Letter {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+/* Medium Screens (Tablets - ~601px to ~1024px width) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .featured-pet .details {
+        font-size: 2rem;
+        top: 50%;
+        width: 70%;
+    }
+
+    .pet-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Letter {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+/* Large Screens (Desktops - ~1025px width and above) */
+@media (min-width: 1025px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .featured-pet .details {
+        font-size: 2.2rem;
+        top: 60%;
+        width: 50%;
+    }
+
+    .pet-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .Letter {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}

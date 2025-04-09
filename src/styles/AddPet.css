@@ -1,0 +1,23 @@
+/* AddPet.css */
+.addpet-container {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+  
+  .addpet-form input {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .addpet-form button {
+    padding: 0.75rem;
+    font-weight: bold;
+  }
+  
