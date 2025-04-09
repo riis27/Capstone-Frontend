@@ -4,12 +4,12 @@ import '../styles/FAQs.css';
 
 const FAQImages = [
   {
-    src: 'https://images.unsplash.com/photo-1534958210670-31215027cb02?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njh8fHZldGVyaW5hcmlhbnxlbnwwfDB8MHx8fDI%3D',
+    src: 'https://images.unsplash.com/photo-1547960450-2ea08b931270?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     headline: 'Frequently Asked Questions',
     subtitle: 'Answers that help you feel confident, cared for, and informed.',
   },
   {
-    src: 'https://images.pexels.com/photos/5468396/pexels-photo-5468396.jpeg?auto=compress&cs=tinysrgb&w=600',
+    src: 'https://images.unsplash.com/photo-1534958210670-31215027cb02?q=80&w=1051&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     headline: 'Everything You Need to Know',
     subtitle: 'From services to adoption—we’ve got you covered.',
   },

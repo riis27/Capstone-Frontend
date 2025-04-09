@@ -48,7 +48,7 @@ const Adoption = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const BASE_URL = 'http://localhost:2727/pets';
+  const BASE_URL = BACKEND_URL + 'pets';
 
   // Fetch pets
   useEffect(() => {

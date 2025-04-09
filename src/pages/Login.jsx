@@ -34,7 +34,7 @@ const Login = () => {
       localStorage.setItem('userInfo', JSON.stringify(data.user));
 
       // ✅ Redirect
-      navigate('/');
+      navigate('/add-pet');
     } catch (err) {
       setError(err.message);
     }
