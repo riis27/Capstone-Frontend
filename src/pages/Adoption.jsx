@@ -1,7 +1,7 @@
 // Adoption.jsx
 import React, { useEffect, useState } from 'react';
 import '../styles/Adoption.css';
-
+import BACKEND_URL from '../config';
 const PetBox = ({ pet, onVote }) => {
   const [expanded, setExpanded] = useState(false);
 
