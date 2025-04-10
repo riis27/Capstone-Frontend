@@ -119,7 +119,7 @@ const Adoption = () => {
 
   return (
     <div className="container mt-5">
-      <h1 className="text-center mb-4">Meet Our Adorable Adoptables</h1>
+      <h1 className="adoption-title">Meet Our Adorable Adoptables</h1>
 
       {loading ? (
         <p className="text-center">🐾 Loading pets...</p>

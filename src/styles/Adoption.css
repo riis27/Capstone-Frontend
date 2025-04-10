@@ -9,9 +9,9 @@
 
 
 /* Font Styles  */
-h1 {
+.adoption-title {
   font-family: "Castoro Titling", serif;
-  color: black;
+  color: white;
 }
 
 h5 {
@@ -25,6 +25,7 @@ p {
 /* Card Container */
 .pet-box {
   background-color: #fff;
+  color: black;
   border-radius: 8px;
   border: 1px solid #ddd;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
