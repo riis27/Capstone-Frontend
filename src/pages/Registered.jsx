@@ -9,13 +9,13 @@ const Registered = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       navigate('/');
-    }, 2727); // redirect after 5 seconds
+    }, 5000); // redirect after 5 seconds
 
     return () => clearTimeout(timer);
   }, [navigate]);
 
   const handleReturnHome = () => {
-    navigate('/');
+    navigate('/contact');
   };
 
   return (

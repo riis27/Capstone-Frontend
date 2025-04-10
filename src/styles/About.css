@@ -104,7 +104,7 @@
 .philanthropy-section {
   text-align: center;
   padding: 2rem;
-  background-color: rgba(248, 243, 255, 0.9);
+  background-color: rgba(240, 228, 228, 0.9);
   border-radius: 2px;
   box-shadow: 0 4px 12px rgba(155, 123, 194, 0.15);
   margin-top: 4rem;
@@ -124,9 +124,9 @@
 .donate-link {
   font-weight: 600;
   color: #7d7078;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .donate-link:hover {
-  color: #a78a9a;
+  color: #dbc1cf;
 }
