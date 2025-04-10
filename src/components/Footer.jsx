@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/Footer.css";
 import BACKEND_URL from "../config";
+
 const Footer = () => {
   const [email, setEmail] = useState("");
   const navigate = useNavigate();
@@ -10,7 +11,7 @@ const Footer = () => {
   const handleNewsletterSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch(BACKEND_URL +"/api/newsletter", {
+      const res = await fetch(BACKEND_URL + "api/newsletter", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),

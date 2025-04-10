@@ -32,7 +32,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch(BACKEND_URL+'/api/messages', {
+      const res = await fetch(BACKEND_URL+'api/messages', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
