@@ -9,7 +9,7 @@ const Registered = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       navigate('/');
-    }, 10000); // redirect after 10 seconds
+    }, 1000000000); // redirect after 10 seconds
 
     return () => clearTimeout(timer);
   }, [navigate]);
@@ -25,7 +25,7 @@ const Registered = () => {
           <h1>Thank You!</h1>
           <p>Your message has been received. We'll get back to you shortly.</p>
           <p className="small">You'll be automatically redirected to the homepage in a few seconds.</p>
-          <button className="home-button" onClick={handleReturnHome}>
+          <button className="registered-button" onClick={handleReturnHome}>
             Return to Home
           </button>
         </div>

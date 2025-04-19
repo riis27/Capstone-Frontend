@@ -41,8 +41,8 @@ const Footer = () => {
 
         <div className="footer-column subscribe">
 
-          <h2 className="footer-subscribe-title">Subscribe to our Pawsh Press</h2>
-          <p className="footer-subscribe-text">Receive 10% off our services + be the first to know about our newest friends!</p>
+          <h2 className="subscribe-title">Subscribe to our Pawsh Press</h2>
+          <p className="subscribe-text">New subscribers receive 10% off oue services!</p>
 
           <form onSubmit={handleNewsletterSubmit} className="footer-form">
             <input

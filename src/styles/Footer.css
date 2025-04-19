@@ -26,28 +26,28 @@
 .footer-title {
   font-family: "Licorice", cursive;
   font-weight: 100;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: left;
   line-height: 85%;
 }
 
 .footer-column p {
-  font-size: 1rem;
+  font-size: .8rem;
   margin: 5px 0;
   font-family: "Benne", serif;
   text-align: left;
 }
 
-.footer-subscribe-title {
+.subscribe-title {
   font-family: "Castoro Titling", serif;
   font-size: 1.2rem;
   margin-bottom: 5px;
   text-align: right;
 }
 
-.footer-subscribe-text {
+.subscribe-text {
   font-family: "Benne", serif;
-  font-size: 0.97rem;
+  font-size: 1.2rem;
   margin-bottom: 15px;
   text-align-last: right;
 }

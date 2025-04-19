@@ -51,20 +51,21 @@ body {
   margin-top: 1rem;
 }
 
-.home-button {
-  margin-top: 1.5rem;
-  background-color: #927b79;
-  color: #fff;
-  border: none;
-  padding: 0.75rem 1.5rem;
+.registered-button {
+  align-self: center;
   font-family: "Castoro Titling", serif;
-  font-size: 1rem;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  padding: 0.5rem 1.2rem;
+  border: 1px solid rgb(158, 128, 128, .5);
+  background-color: transparent;
+  color: rgb(120, 104, 104);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+  margin-top: auto;
+  text-decoration: none;
 }
 
-.home-button:hover {
-  background-color: #bbaeae;
-  color: #fff;
+.registered-button:hover {
+  background-color: rgb(158, 128, 128, .5);
+  color: white;
 }

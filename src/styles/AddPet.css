@@ -4,9 +4,10 @@
     color: rgb(120, 104, 104);
     margin: 3rem auto;
     padding: 2rem;
-    background: #fff;
+    background: rgb(255, 255, 255, .8);
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(117, 92, 92, 0.1);
+    flex: 1;
   }
   
   .addpet-form input {
