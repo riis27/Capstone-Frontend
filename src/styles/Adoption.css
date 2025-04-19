@@ -1,14 +1,25 @@
 /* Adoption.css */
 .pet-container {
+  color: rgb(120, 104, 104);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: 1fr;
   justify-content: center;
-  padding: 2rem;
+  gap: 1.5rem;
+  margin-bottom: 5rem;
 }
 
+@media (min-width: 768px) {
+  .pet-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
-/* Font Styles  */
+@media (min-width: 992px) {
+  .pet-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .adoption-title {
   font-family: "Castoro Titling", serif;
   color: white;
@@ -22,29 +33,28 @@ p {
   font-family: "Benne", serif;
 }
 
-/* Card Container */
 .pet-box {
-  background-color: #fff;
-  color: black;
-  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(120, 104, 104);
+  border-radius: 10px;
   border: 1px solid #ddd;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  padding: 10px;
   height: 100%;
   overflow: hidden;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-/* Card Container Hover */
 .pet-box:hover {
   transform: translateY(-4px) scale(1.01);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Card Image */
 .pet-box img {
   width: 100%;
   height: 200px;
@@ -53,23 +63,6 @@ p {
   margin-bottom: 1rem;
 }
 
-/* Card Title */
-.pet-box h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 0.3rem;
-}
-
-/* Card Title Span */
-.pet-box h3 span.age {
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: #444;
-  margin-left: 0.25rem;
-}
-
-/* Card Body */
 .pet-info {
   flex: 1;
   display: flex;
@@ -79,32 +72,48 @@ p {
   background-color: transparent;
   padding: 0;
   border-radius: 0;
+  width: 100%;
+  align-items: center;
 }
 
-/* Card Body Paragraph */
 .pet-info p {
   font-size: 0.95rem;
-  color: #444;
+  color: rgb(127, 110, 110);
   margin-top: 0.5rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
-/* Card Body Strong */
 .pet-info strong {
   font-weight: bold;
 }
 
-/* Expand Button */
-.expand-button {
-  margin-top: auto;
+.pet-button,
+.edit-button,
+.delete-button,
+.save-button,
+.cancel-button {
+  width: 90%;
+  max-width: 100px;
+  text-align: center;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  font-family: "Castoro Titling", serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  border: 1px solid;
+  color: white;
+  display: block;
+  margin: 0.4rem auto;
+  box-sizing: border-box;
 }
 
-/* Card Button */
 .pet-button {
   align-self: center;
   font-family: "Castoro Titling", serif;
   padding: 0.5rem 1.2rem;
-  border: 0.5px solid #cdaaaa;
+  border: .5px solid #cdaaaa;
   background-color: transparent;
   color: #987575;
   border-radius: 5px;
@@ -112,43 +121,111 @@ p {
   font-weight: 500;
   margin-top: auto;
   text-decoration: none;
- }
+}
 
-/* Card Button Hover */
 .pet-button:hover {
-  background-color: #9e8080;
-  color: black;
+  background-color: rgba(158, 128, 128, 0.5);
+  color: white;
 }
 
-/* Vote Buttons */
-.vote-buttons {
+.edit-form input,
+.edit-form textarea {
+  margin: 0.5rem auto;
+  padding: 1rem 0.6rem;
+  width: 90%;
+  border: 1px solid #e4d9c2;
+  border-radius: 8px;
+  font-family: "Benne", serif;
+  font-size: 0.95rem;
+  background-color: #c9b79d;
+  color: white;
+  display: block;
+}
+
+.edit-form input:first-of-type,
+.edit-form textarea:first-of-type {
+  margin-top: 1rem;
+}
+
+.edit-buttons {
   display: flex;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  width: 100%;
 }
 
-/* Vote Button */
-.vote-buttons button {
-  min-width: 100px;
-  font-weight: bold;
-}
-
-
-/* Tablet Layout */
 @media (min-width: 768px) {
-  .pet-container {
-    grid-template-columns: repeat(2, 1fr);
+  .edit-buttons {
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
-/* Desktop Layout */
-@media (min-width: 1024px) {
-  .pet-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.save-cancel-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  width: 100%;
 }
 
-/* Mobile Responsive */
+.edit-button,
+.delete-button {
+  width: 90%;
+  max-width: 280px;
+  text-align: center;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  font-family: "Castoro Titling", serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  border: 1px solid;
+  color: white;
+  display: block;
+  margin: 0.4rem auto;
+  box-sizing: border-box;
+}
+
+.edit-button {
+  background-color: #bbaaaa;
+  border-color: #c0a5a5;
+}
+
+.edit-button:hover {
+  background-color: #a48787;
+}
+
+.delete-button {
+  background-color: #e8c0c0;
+  border-color: #e6b6b6;
+}
+
+.delete-button:hover {
+  background-color: #c46969;
+}
+
+.save-button {
+  background-color: #cbe8c0;
+  border-color: #c6e4cc;
+}
+
+.save-button:hover {
+  background-color: #9cc088;
+}
+
+.cancel-button {
+  background-color: #dfc8c8;
+  border-color: #d89c9c;
+}
+
+.cancel-button:hover {
+  background-color: #d29595;
+}
+
 @media (max-width: 767px) {
   .pet-box h3 {
     font-size: 1.15rem;
@@ -157,16 +234,18 @@ p {
   .pet-info p {
     font-size: 0.9rem;
   }
+
+  .edit-buttons {
+    flex-direction: column !important;
+  }
 }
 
-/* Tablet Responsive */
 @media (min-width: 768px) and (max-width: 991px) {
   .pet-box h3 {
     font-size: 1.2rem;
   }
 }
 
-/* Desktop Responsive */
 @media (min-width: 992px) {
   .pet-info p {
     font-size: 1rem;

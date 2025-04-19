@@ -16,6 +16,7 @@ import Registered from './pages/Registered';
 import Login from './pages/Login'; 
 import AddPet from './pages/AddPet';
 import Landing from './pages/Landing';
+import Subscribed from './pages/Subscribed';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/add-pet" element={<AddPet />} />
         <Route path="/" element={<Landing />} />
+        <Route path="/Subscribed" element={<Subscribed />} />
       </Routes>
       {/* <Chatbox /> */}
       <Footer />

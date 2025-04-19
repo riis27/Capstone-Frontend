@@ -6,14 +6,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const servicePackages = [
   {
     title: 'Welcome Package',
-    image: 'https://images.pexels.com/photos/20607811/pexels-photo-20607811/free-photo-of-couple-expecting-a-baby-posing-in-a-studio-with-a-dog.jpeg?auto=compress&cs=tinysrgb&w=400',
+    image: 'https://images.unsplash.com/photo-1721904309410-ca4cd5ed681e?q=80&w=1115&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     name: '15min, 3 prints, custom tag',
     price: '$150',
     description: 'Our welcome package is specially priced to capture your first professional photos with your adopted pet! Choose a custom tag from our collection, and we add the names and details of your newest family member for you while you snap photos. Welcome to the Pawsh family!'
   },
   {
     title: 'Birthday Session',
-    image: 'https://images.pexels.com/photos/27176120/pexels-photo-27176120/free-photo-of-a-couple-wearing-party-hats-celebrating-their-dogs-birthday.jpeg?auto=compress&cs=tinysrgb&w=400',
+    image: 'https://images.unsplash.com/photo-1662441899435-8bdee58218cd?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     name: '20min, 10 prints, 1 smash cake',
     price: '$300',
     description: "Whether it's yours, your fur family, or someone's birthday, this festive photoshoot comes with a pet-friendly 6 inch smash cake made by our local Pet Bakery for your pet to make an adorable mess of!"
@@ -27,7 +27,7 @@ const servicePackages = [
   },
   {
     title: 'Paws & Prints',
-    image: 'https://images.pexels.com/photos/7788657/pexels-photo-7788657.jpeg?auto=compress&cs=tinysrgb&w=400',
+    image: 'https://images.unsplash.com/photo-1621567389899-2c49bbce3636?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     name: '45min, Paw Plaque, 8x8 album',
     price: '$450',
     description: 'You and your family will cherish the beautiful memories made in this 45 minute session, which comes with a special "Paw Plaque" of your pet paws, an accessory/toy of your choice, and 20 prints in a 6x6 album.'

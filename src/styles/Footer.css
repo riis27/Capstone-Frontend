@@ -1,12 +1,13 @@
-/* Footer Styling */
+/* Footer.css */
 
 .footer {
   background-color: #5a5050;
   color: white;
-  padding: 40px 20px 10px;
+  padding: 20px 20px 5px;
   width: 100%;
   font-family: "Benne", serif;
   box-sizing: border-box;
+  opacity: 81%;
 }
 
 .footer-content {
@@ -14,8 +15,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
   width: 100%;
 }
 
@@ -25,10 +24,11 @@
 }
 
 .footer-title {
-  font-family: "Castoro Titling", serif;
-  font-size: 1.8rem;
-  margin-bottom: 10px;
+  font-family: "Licorice", cursive;
+  font-weight: 100;
+  font-size: 3rem;
   text-align: left;
+  line-height: 85%;
 }
 
 .footer-column p {
@@ -47,16 +47,16 @@
 
 .footer-subscribe-text {
   font-family: "Benne", serif;
-  font-size: 0.95rem;
+  font-size: 0.97rem;
   margin-bottom: 15px;
-  text-align: right;
+  text-align-last: right;
 }
 
 .footer-form {
   display: flex;
   gap: 10px;
   flex-wrap: nowrap;
-  align-items: stretch;
+  align-items: center; 
   justify-content: flex-end;
 }
 
@@ -68,23 +68,30 @@
   font-family: "Benne", serif;
   flex: 1;
   min-width: 200px;
+  box-sizing: border-box;
+  line-height: normal;
+  vertical-align: middle;
+  margin-top: 20px; /* Added top margin */
 }
 
 .footer-button {
-  background-color: rgb(175, 165, 170);
+  background-color: transparent;
+  color: white;
   border-radius: 10px;
-  padding: 10px 25px;
+  padding: 7px 25px;
   font-weight: bolder;
   font-size: 1rem;
-  font-family: "Benne", serif;
-  border: none;
+  font-family: "Castoro Titling", serif;  border: 1px auto;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  height: 100%;
-}
+  height: auto;
+  line-height: normal;
+  box-sizing: border-box;
+  vertical-align: middle;
+ }
 
 .footer-button:hover {
-  background-color: rgb(185, 140, 150);
+  background-color: rgb(190, 174, 174);
 }
 
 .footer-bottom {
@@ -100,19 +107,14 @@
 /* Responsive styles */
 @media (max-width: 992px) {
   .footer-form {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .footer-subscribe-title,
-  .footer-subscribe-text {
-    text-align: left;
-  }
-
-  .footer-input,
-  .footer-button {
     width: 100%;
   }
+
+  .footer-input {
+    min-width: 150px;
+  }
+
+
 }
 
 @media (max-width: 768px) {
@@ -125,8 +127,8 @@
     min-width: 100%;
   }
 
-  .footer-subscribe-title,
-  .footer-subscribe-text {
-    text-align: left;
+  
+   .footer-form {
+     justify-content: flex-start;
   }
 }

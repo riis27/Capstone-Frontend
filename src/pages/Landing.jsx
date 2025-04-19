@@ -12,7 +12,7 @@ const Landing = () => {
 
   useEffect(() => {
     const timerText = setTimeout(() => setShowText(true), 1500);
-    const timerLogo = setTimeout(() => setShowLogo(true), 5000); // 1 second after button (which fades in at 4s)
+    const timerLogo = setTimeout(() => setShowLogo(true), 5000); 
     return () => {
       clearTimeout(timerText);
       clearTimeout(timerLogo);
@@ -50,7 +50,7 @@ const Landing = () => {
         Your browser does not support the video tag.
       </video>
 
-      <div className="landing-overlay" /> {/* The animation is applied directly here */}
+      <div className="landing-overlay" />
 
 
       <div className="center-frame">

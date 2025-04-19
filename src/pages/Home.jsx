@@ -15,8 +15,8 @@ const Home = () => (
 
     <section className="highlights">
       <h2>A Note From Our Founder:</h2>
-      <p className="note">At Pawsh&reg;, we believe every furry friend deserves a loving home. That's why we pour our hearts into matching the perfect pets with their forever families. And to show our appreciation, we're offering an exclusive deal: refer a friend who adopts, and you'll receive a Pawsh&reg; gift basket filled with goodies for your own beloved companion!</p>
-      <p>Offer good until 5/27/25; must be mentioned in referral form to qualify.</p>
+      <p className="note">At Pawsh, we believe every furry friend deserves a loving home. That's why we pour our hearts into matching the perfect pets with their forever families. And to show our appreciation, we're offering an exclusive deal: refer a friend who adopts, and you'll receive custom gift basket filled with goodies for your own beloved companion!</p>
+      <p>Offer good until 5/27/25; mention in referral form to qualify.</p>
     </section>
 
     <section className="adoption">
@@ -25,7 +25,7 @@ const Home = () => (
       </div>
       <h2>New Friends!</h2>
       <a href="/adoption" className="button">Adopt Me</a>
-      <p>See our newest available pets! Will one be your new best friend?</p>
+      <p>See our newest available pets, from our partner breeders and shelters! Will one be your new best friend?</p>
     </section>
 
     <section className="store-details">
@@ -43,11 +43,11 @@ const Home = () => (
       <h2>Meet Our Team</h2>
       <div className="member">
         <p>"My vision to create an ethical, care-based bridge for families and fur friends to connect, has forged unique bonds while maintaining high standards and integrity in every pairing."<br />~ Param Javastrapni, Founder</p>
-        <img src="https://images.pexels.com/photos/6497112/pexels-photo-6497112.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Member 1" />
+        <img src="https://images.unsplash.com/photo-1650811141381-8620031f6c56?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Member 1" />
       </div>
       <div className="member">
-        <p>"Not only do I ensure the safety and quality of all, I also spearhead the photography that we offer our breeders and families to help their fur friends put their best paw forward!"<br />~ Elemina Boolean, Manager</p>
-        <img src="https://images.pexels.com/photos/3936894/pexels-photo-3936894.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Member 2" />
+        <p>"Not only do I ensure the safety and quality of all, I also spearhead the photography that we offer our breeders and families to help their fur friends put their best paw forward!"<br />~ Elemina Tailwind, Manager</p>
+        <img src="https://images.unsplash.com/photo-1607892996263-491f791600c0?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Member 2" />
       </div>
     </section>
 

@@ -1,6 +1,7 @@
 /* AddPet.css */
 .addpet-container {
     max-width: 600px;
+    color: rgb(120, 104, 104);
     margin: 3rem auto;
     padding: 2rem;
     background: #fff;

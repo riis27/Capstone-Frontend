@@ -4,6 +4,22 @@ import "../styles/About.css";
 
 const teamMembers = [
   {
+    name: "Param Javastrapni",
+    role: "Pawsh Founder, Director",
+    photo:
+      "https://images.unsplash.com/photo-1650811141381-8620031f6c56?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    description:
+      "Elemina draws from her experiences in animal advocacy to create a streamlined hub for all animal lovers to connect and build memories together.",
+  },
+  {
+    name: "Elemina Tailwind",
+    role: "National Ambassador",
+    photo:
+      "https://images.unsplash.com/photo-1607892996263-491f791600c0?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    description:
+      "Param is expanding Pawsh's impact in the local community, and is the director of the new Pawsh network in Cincinnati.",
+  },
+  {
     name: "Maya Rivera",
     role: "Veterinary Specialist",
     photo:
@@ -15,7 +31,7 @@ const teamMembers = [
     name: "Elijah Brooks",
     role: "Pet Behaviorist",
     photo:
-      "https://images.unsplash.com/photo-1552058544-f2b08422138a?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1598198414976-ddb788ec80c1?q=80&w=1279&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
       "Elijah helps pets transition smoothly into their new homes with temperament testing and coaching.",
   },
@@ -31,7 +47,7 @@ const teamMembers = [
     name: "Victor Hugo",
     role: "Adoption Consultant",
     photo:
-      "https://images.unsplash.com/photo-1578472577660-6f4a47a6660d?q=80&w=1226&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1653198020531-4a15524333e9?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description:
       "Victor matches families with their ideal companions and walks them through every step.",
   },

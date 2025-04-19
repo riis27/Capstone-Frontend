@@ -1,12 +1,13 @@
-// Login.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/Login.css';
+import { jwtDecode } from 'jwt-decode';
 
 const Login = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({ email: '', password: '' });
   const [error, setError] = useState(null);
+  const [welcomeMessage, setWelcomeMessage] = useState('');
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -27,14 +28,17 @@ const Login = () => {
         throw new Error(data.message || 'Login failed');
       }
 
-      // ✅ Save token to localStorage
       localStorage.setItem('authToken', data.token);
-
-      // ✅ Optionally store user info or role
       localStorage.setItem('userInfo', JSON.stringify(data.user));
 
-      // ✅ Redirect
-      navigate('/add-pet');
+      const decoded = jwtDecode(data.token);
+      const isAdmin = decoded.isAdmin;
+
+      setWelcomeMessage(`Welcome back, ${isAdmin ? 'Admin' : 'User'}!`);
+
+      setTimeout(() => {
+        navigate('/add-pet');
+      }, 1500);
     } catch (err) {
       setError(err.message);
     }
@@ -42,10 +46,11 @@ const Login = () => {
 
   return (
     <div className="login-container">
+      {welcomeMessage && <div className="welcome-banner">{welcomeMessage}</div>}
       <form className="login-form" onSubmit={handleSubmit}>
         <h2>Login to Pawsh Inc.</h2>
         {error && <p className="error-message">{error}</p>}
-        
+
         <input
           type="email"
           name="email"

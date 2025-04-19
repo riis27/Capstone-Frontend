@@ -83,7 +83,7 @@ const FAQs = () => {
         <img src={FAQImages[currentImage].src} alt="FAQ Banner" className="faqs-img" />
         <div className="faqs-overlay"></div>
         <div className="faqs-content">
-          <h1 className="faqs-title">{FAQImages[currentImage].headline}</h1>
+          <h2 className="faqs-title">{FAQImages[currentImage].headline}</h2>
           <p className="faqs-subtitle">{FAQImages[currentImage].subtitle}</p>
         </div>
       </div>
@@ -92,7 +92,7 @@ const FAQs = () => {
       <div className="faq-info">
         {faqs.map((section, i) => (
           <div key={i} className="faq-content">
-            <h3>{section.category}</h3>
+            <h3 className="faqs-header">{section.category}</h3>
             {section.questions.map((faq, j) => {
               const index = `${i}-${j}`;
               return (

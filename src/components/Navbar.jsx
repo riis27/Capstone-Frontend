@@ -16,6 +16,7 @@ const Navbar = () => {
 
   const handleLogout = () => {
     localStorage.removeItem('authToken');
+    localStorage.removeItem('userInfo');
     setUser(null);
     navigate('/');
   };
@@ -29,7 +30,7 @@ const Navbar = () => {
           <img src="/assets/pawsh-logo.png" alt="Pawsh Logo" className="navbar-image" />
         </Link>
 
-        {/* Hamburger (only visible on small screens) */}
+        {/* Hamburger for small screens */}
         <button
           className="navbar-toggler d-md-none ms-auto"
           type="button"
@@ -42,7 +43,7 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Nav links visible on medium+ and collapsible on small */}
+        {/* Nav links */}
         <div className="collapse navbar-collapse justify-content-end dropdown-nav-wrapper" id="navbarLinks">
           <ul className="navbar-nav text-end">
             <li className="nav-item">
@@ -73,14 +74,14 @@ const Navbar = () => {
               </li>
             )}
 
-            {user ? (
+            {user?.isAdmin ? (
               <>
-                <li className="nav-item nav-link text-muted">
+                <li className="nav-item nav-link text-muted benne-font">
                   {user.email.split('@')[0]}
                 </li>
                 <li className="nav-item">
                   <button
-                    className="btn btn-sm btn-outline-secondary ms-2"
+                    className="logout-button"
                     onClick={handleLogout}
                   >
                     Logout

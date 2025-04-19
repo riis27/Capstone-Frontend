@@ -7,35 +7,39 @@ body,
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: "Benne", serif; 
+    font-family: "Benne", serif;
     margin: 0;
     color: #333;
-    text-align: center; 
-   }
+    text-align: center;
+}
 
-   body {
+body {
     padding-bottom: 0px;
     background-image: url("https://images.unsplash.com/photo-1713558014346-ceddc512a616?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-  }
-   
-  /* .page-wrapper, .main-page, .page, .booking-page, .about-page, .home-page {
+}
+
+/* .page-wrapper, .main-page, .page, .booking-page, .about-page, .home-page {
     opacity: 1 !important;
     z-index: 1;
   } */
 
 /*  Font Style  */
-h1, h2, h3, h4, h5 {
-    font-family: "Castoro Titling", serif; 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Castoro Titling", serif;
     font-weight: bolder;
-    padding: 10px;
-    
+    padding: 2px;
+
 }
 
 p {
-    font-size: .9rem;
+    font-size: 1.3rem;
     line-height: 1.1;
 }
 
@@ -58,12 +62,7 @@ textarea::placeholder {
     color: #888;
 }
 
-/* Optional accent font */
-.script-font {
-    font-family: "Kaushan Script", cursive;
-    font-size: 1.4rem;
-    color: #5c3a4d;
-}
+
 
 /*  Media Queries  */
 
@@ -181,4 +180,3 @@ textarea::placeholder {
         align-self: center;
     }
 }
-

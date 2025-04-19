@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/AddPet.css'; 
 
+
 const AddPet = () => {
   const navigate = useNavigate();
   const [petData, setPetData] = useState({
@@ -27,7 +28,7 @@ const AddPet = () => {
     const token = localStorage.getItem('authToken');
 
     try {
-      const res = await fetch('http://localhost:2727/pets', {
+      const res = await fetch('http://localhost:2727/api/pets', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
