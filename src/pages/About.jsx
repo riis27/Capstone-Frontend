@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Carousel } from "react-bootstrap";
 import "../styles/About.css";
 
 const teamMembers = [
@@ -69,6 +70,24 @@ const teamMembers = [
   },
 ];
 
+const missionImages = [
+  {
+    url: "https://images.unsplash.com/photo-1583160201565-7294e0e44cf0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "Dog with family on beach",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1642161279719-ef7c046e70a5?q=80&w=1175&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "Cat by window",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1541612638194-4cde9f258866?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "Man and their pet",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1718179428284-8967ae2e4744?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "Family silhouette",
+  }
+];
 
 const About = () => {
   return (
@@ -92,12 +111,19 @@ const About = () => {
 
       <h2 className="about-title">The Pawsh<sup>&reg;</sup> Mission</h2>
 
-      <div className="about-image-wrapper">
-        <img
-          src="https://images.unsplash.com/photo-1583160201565-7294e0e44cf0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Dog with family on beach"
-          className="about-image"
-        />
+      {/* New Carousel Section */}
+      <div className="about-carousel-wrapper">
+        <Carousel fade interval={5000} controls={false} indicators={false}>
+          {missionImages.map((image, index) => (
+            <Carousel.Item key={index}>
+              <img
+                className="d-block w-100 about-carousel-image"
+                src={image.url}
+                alt={image.alt}
+              />
+            </Carousel.Item>
+          ))}
+        </Carousel>
       </div>
 
       <div className="about-content">

@@ -44,7 +44,7 @@ const Landing = () => {
         loop
         muted
         playsInline
-        src="/assets/landing.mp4"
+        src={`${import.meta.env.BASE_URL}assets/landing.mp4`}
         type="video/mp4"
       >
         Your browser does not support the video tag.

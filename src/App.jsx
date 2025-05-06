@@ -36,6 +36,7 @@ function App() {
         <Route path="/add-pet" element={<AddPet />} />
         <Route path="/" element={<Landing />} />
         <Route path="/Subscribed" element={<Subscribed />} />
+        <Route path="/Capstone-Frontend" element={<Landing />} />
       </Routes>
       {/* <Chatbox /> */}
       <Footer />

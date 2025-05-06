@@ -1,10 +1,12 @@
+/* About.css */
 .about-page {
   max-width: 1400px;
   margin: 0 auto;
   padding: 4rem 1.5rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
-  background: transparent; 
+  background: transparent;
+  text-align: center;
 }
 
 .about-title {
@@ -15,10 +17,9 @@
   font-weight: 700;
 }
 
-
 .team-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1.5rem;
   margin-bottom: 3.5rem;
@@ -70,26 +71,28 @@
   color: #555;
 }
 
-.about-image-wrapper {
-  display: flex;
-  justify-content: center;
-  margin: 3rem 0;
+.about-carousel-wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 40px;
 }
 
-.about-image {
+.about-carousel-image {
+  height: 450px;
+  object-fit: cover;
   width: 100%;
-  max-width: 720px;
-  border-radius: 5px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 .about-content {
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 .about-content p {
   margin-bottom: 1.5rem;
   font-size: 1.3rem;
+  font-weight: 600;
   line-height: 2rem;
   color: white;
 }
@@ -104,7 +107,7 @@
 .philanthropy-section {
   text-align: center;
   padding: 2rem;
-  background-color: rgba(240, 228, 228, 0.9);
+  background-color: rgba(235, 235, 235, 0.946);
   border-radius: 2px;
   box-shadow: 0 4px 12px rgba(155, 123, 194, 0.15);
   margin-top: 4rem;
@@ -113,14 +116,14 @@
 .philanthropy-section h3 {
   font-size: 2.5rem;
   font-family: "Licorice", cursive;
-
-  color: #8d748a;
+  color: #7a676a;
   margin-bottom: 1rem;
 }
 
 .philanthropy-section p {
-  font-size: 1.05rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
+  color: #62505b;
 }
 
 .donate-link {
@@ -131,4 +134,75 @@
 
 .donate-link:hover {
   color: #dbc1cf;
+}
+
+/* Responsive columns */
+
+
+/* Small screens (phones) */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .team-card {
+    flex: 1 1 100%;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .about-carousel-image {
+    height: 250px;
+  }
+
+  .about-content p {
+    font-size: 1.05rem;
+    line-height: 1.6rem;
+    padding: 0 1rem;
+  }
+
+  .philanthropy-section h3 {
+    font-size: 2rem;
+  }
+
+  .philanthropy-section p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .team-card {
+    flex: 1 1 calc(50% - 1.5rem);
+    max-width: 45%;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-carousel-image {
+    height: 350px;
+  }
+
+  .about-content p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+
+  .philanthropy-section p {
+    font-size: 1.3rem;
+  }
+}
+
+/* Large screens (desktops and up) */
+@media (min-width: 1025px) {
+  .team-card {
+    flex: 1 1 calc(25% - 1.5rem);
+  }
+
+  .about-carousel-image {
+    height: 450px;
+  }
 }

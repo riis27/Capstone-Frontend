@@ -88,17 +88,63 @@ form button:hover {
     color: #fff;
   }
 
-/* Responsive Fixes */
-@media (max-width: 768px) {
+/* Small screens: phones (<768px) */
+@media (max-width: 767px) {
+  .contact-page {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .carousel-container {
+    height: 250px;
+    min-height: 250px;
+  }
+
+  .contact-container {
+    padding: 30px 20px;
+  }
+
+  .contact-container h1 {
+    font-size: 2rem;
+  }
+
+  form input,
+  form textarea {
+    font-size: 1rem;
+  }
+}
+
+/* Medium screens: tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
   .contact-page {
     flex-direction: column;
   }
 
   .carousel-container {
     height: 300px;
+    min-height: 300px;
   }
 
-  .form-container {
-    padding: 20px;
+  .contact-container {
+    padding: 40px;
+  }
+
+  .contact-container h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Large screens: desktops (>1024px) */
+@media (min-width: 1024px) {
+  .contact-page {
+    flex-direction: row;
+  }
+
+  .carousel-container {
+    min-height: 100vh;
+  }
+
+  .contact-container {
+    padding: 60px;
   }
 }

@@ -1,3 +1,4 @@
+// Navbar.jsx
 import React, { useEffect, useState } from 'react';
 import { decodeToken } from '../utils/decodeToken';
 import { Link, useNavigate } from 'react-router-dom';
@@ -27,7 +28,10 @@ const Navbar = () => {
 
         {/* Logo */}
         <Link className="navbar-brand" to="/">
-          <img src="/assets/pawsh-logo.png" alt="Pawsh Logo" className="navbar-image" />
+          <img
+            src={`${import.meta.env.BASE_URL}assets/pawsh-logo.png`}
+            alt="Pawsh Logo"
+            className="navbar-image" />
         </Link>
 
         {/* Hamburger for small screens */}

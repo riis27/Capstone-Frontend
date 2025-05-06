@@ -63,7 +63,7 @@
     border-radius: 5px;
     opacity: -10;
     transform: scale(0.9);
-    animation: boxGrow 1.3s ease-in-out 2.7s forwards;
+    animation: boxGrow 1.1s ease-in-out 2.3s forwards;
 }
 
 @keyframes boxGrow {
@@ -94,7 +94,7 @@
     font-size: 1.5rem;
     margin-bottom: 0.2rem;
     opacity: 0;
-    animation: topFade 1.1s ease-out .1s forwards;
+    animation: topFade 1s ease-out .5s forwards;
 }
 
 @keyframes topFade {
@@ -116,7 +116,7 @@
     font-size: 1.5rem;
     margin-top: 0.4rem;
     opacity: 0;
-    animation: bottomFade 1s ease-out 1.7s forwards;
+    animation: bottomFade 1.1s ease-out 1.5s forwards;
 }
 
 @keyframes bottomFade {
@@ -144,7 +144,7 @@
     font-size: 2.6rem;
     font-weight: bold;
     opacity: 0;
-    animation: fadeInButton 2.3s ease 4s forwards;
+    animation: fadeInButton 2.3s ease 3s forwards;
     text-shadow: 0 0 6px rgba(238, 213, 213, 0.6);
     transition: all 0.3s ease;
 }

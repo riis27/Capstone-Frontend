@@ -8,8 +8,8 @@ import Calendar from "../components/Calendar";
 const Booking = () => {
   const images = [
     "https://images.unsplash.com/photo-1551779891-b83901e1f8b3?q=80&w=1470&auto=format",
-    "https://images.unsplash.com/photo-1633537266841-1efbef449625?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2hpbGQlMjB3aXRoJTIwcGV0fGVufDB8MXwwfHx8Mg%3D%3D",
-    "https://images.unsplash.com/photo-1657460899550-236957618309?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHBob3RvZ3JhcGhlciUyMHdpdGglMjBwZXR8ZW58MHwxfDB8fHwy"
+    "https://images.unsplash.com/photo-1629042336172-1d286a3e5cc7?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1673180247944-5276d6d5f64e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
