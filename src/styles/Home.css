@@ -76,7 +76,6 @@ main p {
 .contacts,
 .Letter,
 .pet-box {
-    border: 1px solid #afa2a2;
     padding: 20px; 
     border-radius: 5px;
     color: white;
@@ -85,7 +84,6 @@ main p {
     text-align: center;
     margin-bottom: 10px; 
 }
-
 
 /* Column Styles */
 .image-block {
